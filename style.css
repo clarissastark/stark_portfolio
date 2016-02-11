@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poiret One', cursive;
+    font-family: 'Arial', sans-serif;
     line-height: 1.5em;
     background-image: url(fielddancer.jpeg);
     background-size: 100%;
@@ -19,6 +19,8 @@ a {
 h1 {
   text-transform: uppercase;
   line-height: 1em;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
 }
 
 .row {
