@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+  position: fixed;
+  border-bottom: 5px solid teal;
+  width: 100%;
+  padding-top: 16px;
+  background-color: rgb(60, 60, 60);
+  height: 2.1em;
+  text-align: right;
+  margin-top: -22px;
+  margin-left: -8px;
+}
+
+
+div .row {
+  margin: 2em;
+  background-color: teal;
+  padding: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 1em;
+}
+
+nav li a:hover {
+    color: #ccccff;
+    background-color: rgb(20, 20, 20);
