@@ -1,49 +1,47 @@
-$primaryColor: darken(hsl(0, 0%, 23%), 20%);
+$primaryColor: hsl(0, 0%, 23%);
 $secondaryColor: hsl(182, 33%, 46%);
 $tertiaryColor: hsl(240, 100%, 90%);
 $fontHeader: Oswald, sans-serif;
 $fontBody: Arial, sans-serif;
+$headerSize: 40px;
 
 /* Google Font */
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
-// @media screen and (max-width: 768px) {
-//   body {
-//     padding-top: 0px;
-//   }
-// }
+@mixin media($queryString){
+  @media #{$queryString} {
+    @content;
+  }
+}
 
-@media only screen and (max-device-width: 480px) {
-  #profile-pic {
+#profile-pic {
+  @include media("(min-width:768px)"){
+    float: left;
+    margin-top: 20px 0 0 60px;
+  }
+  @include media("(max-device-width: 480px)"){
     float: none;
     margin-left: 0px;
   }
 }
 
-@media (min-width:768px) {
-  #profile-pic {
-    float: left;
-    margin-top: 20px 0 0 60px;
+header {
+  .intro-text {
+    padding-top:300px 0 200px 0;
   }
 
-  header {
-    .intro-text {
-      padding-top:300px 0 200px 0;
-    }
+  .intro-text .intro-lead-in {
+    font-size:$headerSize;
+    line-height:40px;
+    margin-bottom:25px;
+  }
 
-    .intro-text .intro-lead-in {
-      font-size:40px;
-      line-height:40px;
-      margin-bottom:25px;
-    }
-
-    .intro-text .intro-heading {
-      text-transform:uppercase;
-      font-weight:700;
-      font-size:75px;
-      line-height:75px;
-      margin-bottom:50px
-    }
+  .intro-text .intro-heading {
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:75px;
+    line-height:75px;
+    margin-bottom:50px
   }
 }
 
@@ -66,7 +64,7 @@ h1 {
   text-transform: uppercase;
   line-height: 1.2em;
   font-weight: bold;
-  font-size: 40px;
+  font-size: $headerSize;
   color: darken($primaryColor, 20%);
 }
 
@@ -152,7 +150,7 @@ header {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: darken($primaryColor, 10%); /* Fallback color */
+  background-color: $primaryColor; /* Fallback color */
   background-color: opacify($primaryColor, .3); /* Color w/ opacity */
 }
 
@@ -200,12 +198,17 @@ header {
 }
 
 #contact {
-  padding-bottom: 150px;
+  padding-bottom: 175px;
+}
+
+// for the contact icons
+.icons {
+  margin: 10px 10px;
 }
 
 footer {
-  color: $tertiaryColor, 20%;
-  text-shadow: 3px 3px darken($primaryColor, 80%);
+  color: $tertiaryColor;
+  text-shadow: 1px 1px darken($primaryColor, 80%);
   text-align: center;
   bottom: 0;
 }

@@ -1,29 +1,27 @@
 /* Google Font */
 @import url(https://fonts.googleapis.com/css?family=Oswald);
-@media screen and (max-width: 768px) {
-  body {
-    padding-top: 0px; } }
-@media only screen and (max-device-width: 480px) {
-  #profile-pic {
-    float: none;
-    margin-left: 0px; } }
 @media (min-width: 768px) {
   #profile-pic {
     float: left;
-    margin-top: 20px 0 0 60px; }
+    margin-top: 20px 0 0 60px; } }
+@media (max-device-width: 480px) {
+  #profile-pic {
+    float: none;
+    margin-left: 0px; } }
 
-  header .intro-text {
-    padding-top: 300px 0 200px 0; }
-  header .intro-text .intro-lead-in {
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 25px; }
-  header .intro-text .intro-heading {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 75px;
-    margin-bottom: 50px; } }
+header .intro-text {
+  padding-top: 300px 0 200px 0; }
+header .intro-text .intro-lead-in {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 25px; }
+header .intro-text .intro-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 75px;
+  margin-bottom: 50px; }
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5em;
@@ -43,7 +41,7 @@ h1 {
   line-height: 1.2em;
   font-weight: bold;
   font-size: 40px;
-  color: black; }
+  color: #080808; }
 
 .content-section {
   padding: 45px 10px 10px 10px;
@@ -55,7 +53,7 @@ nav {
   border-bottom: 5px solid #4f999c;
   width: 100%;
   padding-top: 16px;
-  background-color: #080808;
+  background-color: #3b3b3b;
   height: 2.34em;
   text-align: right;
   margin-left: -8px;
@@ -73,7 +71,7 @@ nav li a {
   padding: 1em; }
 nav li a:hover {
   color: #ccccff;
-  background-color: black; }
+  background-color: #080808; }
 
 /* This styles the header / first div on the page */
 header {
@@ -116,9 +114,9 @@ header {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: black;
+  background-color: #3b3b3b;
   /* Fallback color */
-  background-color: #080808;
+  background-color: #3b3b3b;
   /* Color w/ opacity */ }
 
 /* 'my work' modal content */
@@ -128,7 +126,7 @@ header {
   margin: auto;
   padding: 0;
   width: 80%;
-  box-shadow: 0 4px 8px 0 #080808, 0 6px 20px 0 #080808;
+  box-shadow: 0 4px 8px 0 #3b3b3b, 0 6px 20px 0 #3b3b3b;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
@@ -143,7 +141,7 @@ header {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #080808;
   text-decoration: none;
   cursor: pointer; }
 
@@ -159,11 +157,14 @@ header {
   text-align: left; }
 
 #contact {
-  padding-bottom: 150px; }
+  padding-bottom: 175px; }
+
+.icons {
+  margin: 10px 10px; }
 
 footer {
-  color: white;
-  text-shadow: 2px black;
+  color: #ccccff;
+  text-shadow: 1px 1px black;
   text-align: center;
   bottom: 0; }
 
