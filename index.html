@@ -28,24 +28,23 @@
   <meta name="msapplication-TileImage" content="img/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type='text/javascript' src='js/softscroll.js'></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <!--
-   _______   ___     _______   _______    __	 _______   _______   _______
+  _______   ___     _______   _______    __	 _______   _______   _______
   |       | |   |   |   _   | |   _   |  |  | |       | |       | |   _   |
   |    ___| |   |   |  |_|  | |  |_|  |  |  | |  _____| |  _____| |  |_|  |
   |   |     |   |   |       | |      _|  |  | | |_____  | |_____  |       |
   |   |     |   |   |       | |  |\  \   |  | |_____  | |_____  | |       |
   |   |___  |   |__ |   _   | |  | \  \  |  |  _____| |  _____| | |   _   |
   |_______| |______||__| |__| |__|  \__\ |__| |_______| |_______| |__| |__|
-   _______   _______   _______   _______    __    __
+  _______   _______   _______   _______    __    __
   |       | |_     _| |   _   | |   _   |  |  | /  /
   |  _____|   |   |   |  |_|  | |  |_|  |  |  |/  /
   | |_____    |   |   |       | |      _|  |     /
   |_____  |   |   |   |       | |  |\  \   |     \
-   _____| |   |   |   |   _   | |  | \  \  |  |\  \
+  _____| |   |   |   |   _   | |  | \  \  |  |\  \
   |_______|   |___|   |__| |__| |__|  \__\ |__| \__\
 
 -->
@@ -73,93 +72,84 @@
     </header>
     <div class="content-section" id="work">
       <h1>Work</h1>
-      <img src="" id="project4" />
 
-      <!-- Work modal 4 content -->
-      <div class="modal" id="workModal4">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span id="close4">×</span>
-            <h2><strong>Senate Scorecard</strong></h2>
-          </div>
-          <div class="modal-body">
-            <p><a href="https://senatescore.herokuapp.com/"><strong>The Senate Scorecard</strong></a> is a MEAN stack app that pulls data from the Leage of Conservations Voters 2015 scorecard.</p>
-            <a href="https://senatescore.herokuapp.com/"><img src="" /></a>
-          </div>
-          <div class="modal-footer">
-            <h3>Modal Footer</h3>
+      <div class="demo-btns">
+        <div class="info">
+          <div class="buttons">
+            <p>
+              <a href="" data-modal="#modal" class="modal__trigger">Modal 1</a>
+              <a href="" data-modal="#modal2" class="modal__trigger">Modal 2</a>
+              <a href="" data-modal="#modal3" class="modal__trigger">Modal 3</a>
+            </p>
           </div>
         </div>
       </div>
 
-      <img src="img/soc.png" id="project3" />
 
-      <!-- Work modal 3 content -->
-      <div class="modal" id="workModal3">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span id="close3">×</span>
-            <h2><strong>State of Choice</strong></h2>
-          </div>
-          <div class="modal-body">
-            <p><a href="http://roevwade.herokuapp.com/"><strong>The State of Choice</strong></a> is an Angular on Rails web app utilizing reports from the Guttmacher Institute to build the API backend. The site highlights state laws that have passed since the 2010 Tea Party wave election, most of which limit access to abortion care. A user stories section also allows for a continuing dialog to help bring abortion out of the shadows.</p>
-            <a href="http://roevwade.herokuapp.com/"><img src="img/soc.png" /></a>
-          </div>
-          <div class="modal-footer">
-            <h3>Modal Footer</h3>
+      <!-- Modal -->
+      <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <h1>Modal</h1>
+            <p>Church-key American Apparel trust fund, cardigan mlkshk small batch Godard mustache pickled bespoke meh seitan. Wes Anderson farm-to-table vegan, kitsch Carles 8-bit gastropub paleo YOLO jean shorts health goth lo-fi. Normcore chambray locavore Banksy, YOLO meditation master cleanse readymade Bushwick.</p>
+
+            <!-- modal close button -->
+            <a href="" class="modal__close demo-close">
+              <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+            </a>
+
           </div>
         </div>
       </div>
 
-      <img src="img/sps.png" id="project2" />
-      <!-- Work modal 2 content -->
-      <div class="modal" id="workModal2">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span id="close2">×</span>
-            <h2><strong>Shit Politicians Say</strong></h2>
-          </div>
-          <div class="modal-body">
+
+      <div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <h1><strong>Shit Politicians Say</strong></h1>
             <p><a href="https://shitpoliticianssay.herokuapp.com/"><strong>Shit Politicians Say</strong></a> is a Ruby on Rails application that uses PostgreSQL as the database. The app aims to gamifying learning about America's politicians through a simple quiz. It also allows site visitors to upvote or downvote direct quotes from politicians.</p>
             <a href="https://shitpoliticianssay.herokuapp.com/"><img src="img/sps.png" /></a>
-          </div>
-          <div class="modal-footer">
-            <h3>Modal Footer</h3>
+            <!-- modal close button -->
+            <a href="" class="modal__close demo-close">
+              <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+            </a>
           </div>
         </div>
       </div>
 
-      <img src="img/ftbc.png" id="project1" />
-      <!-- Work modal 1 content -->
-      <div class="modal" id="workModal1">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span id="close1">×</span>
-            <h2><strong>Feel the Bern Concentration</strong></h2>
-          </div>
-          <div class="modal-body">
-            <p>This <a href="http://clarissastark.github.io/project1/"><strong>simple little JavaScript project</strong></a> builds a concentration game board. The user has 12 tries to match all of the colors on the tiles and win.</p>
-            <a href="http://clarissastark.github.io/project1/"><img src="img/ftbc.png" /></a>
+
+      <div id="modal3" class="modal modal__bg" role="dialog" aria-hidden="true">
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <h1>Modal 3</h1>
+            <p>Church-key American Apparel trust fund, cardigan mlkshk small batch Godard mustache pickled bespoke meh seitan. Wes Anderson farm-to-table vegan, kitsch Carles 8-bit gastropub paleo YOLO jean shorts health goth lo-fi.</p>
+
+            <!-- modal close button -->
+            <a href="" class="modal__close demo-close">
+              <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="content-section" id="about">
-      <h1>About</h1>
-      <p>Born in little town called Washington, PA, I'm now a web developer based in Washington, DC. In 2008, I graduated magna cum laude from Brandeis University with a B.A. in psychology and English.</p>
-      <p>I have extensive experience working with political clients and nonprofit organizations, including Sen. Jeanne Shaheen, Rep. Kyrsten Sinema, WETA-TV, Sandy Hook Promise, the Environmental Working Group, UsAgainstAlzheimer's and Hillel International.</p>
-    </div>
-    <div class="content-section" id="contact">
-      <h1>Contact</h1>
-      <div>
-        <a href="mailto:clarissa.stark@gmail.com" target="_blank" class="btn btn-default"><i class="fa fa-envelope fa-5x icons" aria-hidden="true"></i></a>
-        <a href="https://github.com/clarissastark" target="_blank" class="btn btn-default"><i class="fa fa-github-square fa-5x icons" aria-hidden="true"></i></a>
-        <a href="www.linkedin.com/in/clarissastark" target="_blank" class="btn btn-default"><i class="fa fa-linkedin-square fa-5x icons" aria-hidden="true"></i></a>
+
+
+      <div class="content-section" id="about">
+        <h1>About</h1>
+        <p>Born in little town called Washington, PA, I'm now a web developer based in Washington, DC. In 2008, I graduated magna cum laude from Brandeis University with a B.A. in psychology and English.</p>
+        <p>I have extensive experience working with political clients and nonprofit organizations, including Sen. Jeanne Shaheen, Rep. Kyrsten Sinema, WETA-TV, Sandy Hook Promise, the Environmental Working Group, UsAgainstAlzheimer's and Hillel International.</p>
       </div>
-    </div>
-    <footer>
-      Designed and Coded by Clarissa Stark © || Made in DC
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
-  </html>
+      <div class="content-section" id="contact">
+        <h1>Contact</h1>
+        <div>
+          <a href="mailto:clarissa.stark@gmail.com" target="_blank" class="btn btn-default"><i class="fa fa-envelope fa-5x icons" aria-hidden="true"></i></a>
+          <a href="https://github.com/clarissastark" target="_blank" class="btn btn-default"><i class="fa fa-github-square fa-5x icons" aria-hidden="true"></i></a>
+          <a href="www.linkedin.com/in/clarissastark" target="_blank" class="btn btn-default"><i class="fa fa-linkedin-square fa-5x icons" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <footer>
+        Designed and Coded by Clarissa Stark © || Made in DC
+      </footer>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+    </html>
