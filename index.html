@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <head>
-  <title>Clarissa Stark | Developer, Designer, Nerd</title>
+  <title>Clarissa Stark | Coder, Designer, Writer, Political Nerd</title>
   <meta charset="utf-8">
-  <meta name="description" content="Clarissa Stark is a web developer based Washington, DC."/>
+  <meta name="description" content="Clarissa Stark is a web developer and political nerd conveniently based Washington, DC."/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content='clarissa, stark, clarissa stark, developer, programmer, resume, portfolio, washington dc, dc,' name='keywords'>
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Clarissa Stark is a tireless advocate for ending digital bullshit, elegantly." />
   <meta property="og:url" content="http://clarissastark.com" />
   <meta property="og:image" content="" />
+  <link rel="apple-touch-icon" sizes="57x57" href="img/logo/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/logo/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/logo/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/logo/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/logo/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/logo/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/logo/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/logo/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="img/logo/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/logo/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="img/logo/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/logo/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="img/logo/manifest.json">
+  <link rel="mask-icon" href="img/logo/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="img/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type='text/javascript' src='js/softscroll.js'></script>
@@ -55,19 +73,37 @@
     </header>
     <div class="content-section" id="work">
       <h1>Work</h1>
+      <img src="" id="project4" />
 
-      <img src="img/sps_s.png" id="project3" />
+      <!-- Work modal 4 content -->
+      <div class="modal" id="workModal4">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span id="close4">×</span>
+            <h2><strong>Senate Scorecard</strong></h2>
+          </div>
+          <div class="modal-body">
+            <p><a href="https://senatescore.herokuapp.com/"><strong>The Senate Scorecard</strong></a> is a MEAN stack app that pulls data from the Leage of Conservations Voters 2015 scorecard.</p>
+            <a href="https://senatescore.herokuapp.com/"><img src="" /></a>
+          </div>
+          <div class="modal-footer">
+            <h3>Modal Footer</h3>
+          </div>
+        </div>
+      </div>
+
+      <img src="img/soc.png" id="project3" />
 
       <!-- Work modal 3 content -->
       <div class="modal" id="workModal3">
         <div class="modal-content">
           <div class="modal-header">
-            <span class="close">×</span>
-            <h2>State of Choice</h2>
+            <span id="close3">×</span>
+            <h2><strong>State of Choice</strong></h2>
           </div>
           <div class="modal-body">
-            <p>The State of Choice is an Angular on Rails web app utilizing reports from the Guttmacher Institute to build the API backend. The site highlights state laws that have passed since the 2010 Tea Party wave election, most of which limit access to abortion care. A user stories section also allows for a continuing dialog to help bring abortion out of the shadows.</p>
-            <img src="img/stateofchoice_400x406.png" />
+            <p><a href="http://roevwade.herokuapp.com/"><strong>The State of Choice</strong></a> is an Angular on Rails web app utilizing reports from the Guttmacher Institute to build the API backend. The site highlights state laws that have passed since the 2010 Tea Party wave election, most of which limit access to abortion care. A user stories section also allows for a continuing dialog to help bring abortion out of the shadows.</p>
+            <a href="http://roevwade.herokuapp.com/"><img src="img/soc.png" /></a>
           </div>
           <div class="modal-footer">
             <h3>Modal Footer</h3>
@@ -75,17 +111,17 @@
         </div>
       </div>
 
-      <img src="img/stateofchoice_s.png" id="project2" />
+      <img src="img/sps.png" id="project2" />
       <!-- Work modal 2 content -->
       <div class="modal" id="workModal2">
         <div class="modal-content">
           <div class="modal-header">
-            <span class="close">×</span>
-            <h2>Shit Politicians Say</h2>
+            <span id="close2">×</span>
+            <h2><strong>Shit Politicians Say</strong></h2>
           </div>
           <div class="modal-body">
-            <p>Shit Politicians Say is a Ruby on Rails application that uses PostgreSQL as the database. The app aims to gamifying learning about America's politicians through a simple quiz. It also allows site visitors to upvote or downvote direct quotes from politicians.</p>
-            <img src="img/sps_400x406.png" />
+            <p><a href="https://shitpoliticianssay.herokuapp.com/"><strong>Shit Politicians Say</strong></a> is a Ruby on Rails application that uses PostgreSQL as the database. The app aims to gamifying learning about America's politicians through a simple quiz. It also allows site visitors to upvote or downvote direct quotes from politicians.</p>
+            <a href="https://shitpoliticianssay.herokuapp.com/"><img src="img/sps.png" /></a>
           </div>
           <div class="modal-footer">
             <h3>Modal Footer</h3>
@@ -93,17 +129,17 @@
         </div>
       </div>
 
-      <img src="img/concentration_s.png" id="project1" />
+      <img src="img/ftbc.png" id="project1" />
       <!-- Work modal 1 content -->
       <div class="modal" id="workModal1">
         <div class="modal-content">
           <div class="modal-header">
-            <span class="close">×</span>
-            <h2>Feel the Bern Concentration</h2>
+            <span id="close1">×</span>
+            <h2><strong>Feel the Bern Concentration</strong></h2>
           </div>
           <div class="modal-body">
-            <p>This is a simple little JavaScript project that builds a concentration game board. The user has 12 tries to match all of the colors on the tiles.</p>
-            <img src="img/concentration_400x406.png" />
+            <p>This <a href="http://clarissastark.github.io/project1/"><strong>simple little JavaScript project</strong></a> builds a concentration game board. The user has 12 tries to match all of the colors on the tiles and win.</p>
+            <a href="http://clarissastark.github.io/project1/"><img src="img/ftbc.png" /></a>
           </div>
         </div>
       </div>
@@ -127,34 +163,3 @@
     <script src="js/script.js"></script>
   </body>
   </html>
-
-
-<!-- <div class="row social">
-<div class="col-md-12">
-<a href="https://twitter.com/scotch_io" target="_blank" class="icon-spot">
-<span class="icon">
-<span class="iconic iconic-social-twitter"></span>
-</span>
-</a>
-<a href="https://facebook.com/scotchdevelopment" target="_blank" class="icon-spot">
-<span class="icon">
-<span class="iconic iconic-social-facebook"></span>
-</span>
-</a>
-<a href="https://github.com/scotch-io" target="_blank" class="icon-spot">
-<span class="icon">
-<span class="iconic iconic-social-github"></span>
-</span>
-</a>
-<a href="https://feeds.feedblitz.com/scotch_io" target="_blank" class="icon-spot">
-<span class="icon">
-<span class="iconic iconic iconic-rss-alt"></span>
-</span>
-</a>
-<a href="https://pub.scotch.io" target="_blank" class="icon-spot">
-<span class="icon">
-<span class="iconic iconic-pencil"></span>
-</span>
-</a>
-</div>
-</div> -->

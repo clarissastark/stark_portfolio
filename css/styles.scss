@@ -4,6 +4,7 @@ $tertiaryColor: hsl(240, 100%, 90%);
 $fontHeader: Oswald, sans-serif;
 $fontBody: Arial, sans-serif;
 $headerSize: 40px;
+$breakpoint-phone: 480px;
 
 /* Google Font */
 @import url(https://fonts.googleapis.com/css?family=Oswald);
@@ -17,7 +18,7 @@ $headerSize: 40px;
 #profile-pic {
   @include media("(min-width:768px)"){
     float: left;
-    margin-top: 20px 0 0 60px;
+    margin: 20px 0 0 60px;
   }
   @include media("(max-device-width: 480px)"){
     float: none;
@@ -78,6 +79,7 @@ nav {
   position: fixed;
   border-bottom: 5px solid $secondaryColor;
   width: 100%;
+  height: 2.3em;
   padding-top: 16px;
   background-color: $primaryColor;
   text-align: right;
@@ -192,6 +194,15 @@ header {
   padding: 2px 16px;
 }
 
+
+.modal-body img {
+  width: 100%;
+}
+
+#work img {
+  width: 350px;
+}
+
 #play p, #about p {
   text-align: left;
 }
@@ -207,7 +218,7 @@ header {
 }
 
 footer {
-  color: $tertiaryColor;
+  color: lighten($tertiaryColor, 80%);
   text-shadow: 1px 1px darken($primaryColor, 80%);
   text-align: center;
   bottom: 0;
