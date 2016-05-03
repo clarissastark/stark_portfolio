@@ -37,6 +37,12 @@ header {
     margin-bottom:25px;
   }
 
+    // .intro-text .intro-lead-in p {
+    //   background-color: $tertiaryColor;
+    //   padding: 10px;
+    //   opacity: .8;
+    // }
+
   .intro-text .intro-heading {
     text-transform:uppercase;
     font-weight:700;
@@ -85,6 +91,7 @@ nav {
   text-align: right;
   margin-left: -8px;
   margin-top: -10px;
+  z-index: 500;
 }
 
 nav {
@@ -211,11 +218,11 @@ header {
 .modal__trigger {
   position: relative;
   display: inline-block;
-  padding: 1.2rem 2.4rem;
+  // padding: 1.2rem 2.4rem;
   color: rgba(0,0,0,0.7);
-  line-height: 1;
+  line-height: 0;
   cursor: pointer;
-  background: lighten(invert($primaryColor), 5%);
+  // background: lighten(invert($primaryColor), 5%);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-user-select: none;
