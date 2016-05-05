@@ -1,6 +1,7 @@
 $primaryColor: hsl(0, 0%, 23%);
 $secondaryColor: hsl(182, 33%, 46%);
 $tertiaryColor: hsl(240, 100%, 90%);
+$mustardColor: hsl(47, 100%, 50%);
 $fontHeader: Oswald, sans-serif;
 $fontBody: Arial, sans-serif;
 $headerSize: 40px;
@@ -18,12 +19,36 @@ $breakpoint-phone: 480px;
 #profile-pic {
   @include media("(min-width:768px)"){
     float: left;
-    margin: 20px 0 0 60px;
+    margin: -50px 30px 0px 60px;
   }
   @include media("(max-device-width: 480px)"){
     float: none;
     margin-left: 0px;
   }
+}
+
+
+#brand-statement {
+  @include media("(min-width:768px)"){
+    background-color: none;
+    text-align: left;
+  }
+  @include media("(max-device-width: 480px)"){
+    background-color: $mustardColor;
+    padding: 10px 10px;
+  }
+}
+
+.intro-lead-in h1 {
+  @include media("(min-width:768px)"){
+    text-align: left;
+    padding-left: 30px;
+  }
+}
+
+.img-circle {
+  border-radius: 50%;
+  border: 5px 1px lighten(invert($primaryColor), 80%);
 }
 
 header {
@@ -37,11 +62,11 @@ header {
     margin-bottom:25px;
   }
 
-    // .intro-text .intro-lead-in p {
-    //   background-color: $tertiaryColor;
-    //   padding: 10px;
-    //   opacity: .8;
-    // }
+  // .intro-text .intro-lead-in p {
+  //   background-color: $tertiaryColor;
+  //   padding: 10px;
+  //   opacity: .8;
+  // }
 
   .intro-text .intro-heading {
     text-transform:uppercase;
@@ -151,8 +176,8 @@ header {
 // new modal
 
 /**
- * Material Modal CSS
- */
+* Material Modal CSS
+*/
 .modal {
   will-change: visibility, opacity;
   display: -webkit-box;
@@ -161,12 +186,12 @@ header {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -187,8 +212,8 @@ header {
 .modal--align-top {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 .modal__bg {
   background: transparent;
@@ -226,9 +251,9 @@ header {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -247,7 +272,7 @@ header {
   bottom: 0;
   background: lighten(invert($primaryColor), 5%);
   -webkit-transform: none;
-          transform: none;
+  transform: none;
   opacity: 1;
   -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -264,8 +289,8 @@ header {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .demo-btns header h1 {
@@ -283,15 +308,15 @@ header {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex-flow: column wrap;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 .demo-btns p {
   text-align: center;
