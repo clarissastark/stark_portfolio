@@ -1,4 +1,19 @@
-// $(document).ready(function(){
+// this provides smooth scrolling to anchor links
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 var Modal = (function() {
 
   var trigger = $qsa('.modal__trigger'); // what you click to activate the modal
@@ -190,10 +205,3 @@ var Modal = (function() {
 }());
 
 Modal.init();
-
-
-// this helps link away from the modal
-$(".modal").on('click',"a[data-window='external']", function() {
-    window.open($(this).attr('href'));
-    return true;
-       });

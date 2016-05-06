@@ -19,7 +19,7 @@ $breakpoint-phone: 480px;
 #profile-pic {
   @include media("(min-width:768px)"){
     float: left;
-    margin: -50px 30px 0px 60px;
+    margin: -45px 30px 0px 60px;
   }
   @include media("(max-device-width: 480px)"){
     float: none;
@@ -27,51 +27,49 @@ $breakpoint-phone: 480px;
   }
 }
 
-
-#brand-statement {
-  @include media("(min-width:768px)"){
-    background-color: none;
-    text-align: left;
-  }
-  @include media("(max-device-width: 480px)"){
-    background-color: $mustardColor;
-    padding: 10px 10px;
-  }
+p#brand-statement  {
+  background-color: $mustardColor;
+  padding: 10px 10px;
 }
 
 .intro-lead-in h1 {
   @include media("(min-width:768px)"){
     text-align: left;
-    padding-left: 30px;
   }
 }
 
+// for styling the profile pic
 .img-circle {
   border-radius: 50%;
-  border: 5px 1px lighten(invert($primaryColor), 80%);
+}
+
+.avatar {
+  margin: 10px;
+  border:10px solid lighten($tertiaryColor, 20%);
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  box-shadow: 0px 2px 5px lighten($primaryColor, 40%);
 }
 
 header {
   .intro-text {
-    padding-top:300px 0 200px 0;
+    padding:300px 0 200px 0;
   }
 
   .intro-text .intro-lead-in {
-    font-size:$headerSize;
     line-height:40px;
     margin-bottom:25px;
   }
 
-  // .intro-text .intro-lead-in p {
-  //   background-color: $tertiaryColor;
-  //   padding: 10px;
-  //   opacity: .8;
-  // }
+  .intro-text .intro-lead-in p {
+    font-size: 18px;
+  }
 
   .intro-text .intro-heading {
     text-transform:uppercase;
     font-weight:700;
-    font-size:75px;
+    font-size:$headerSize;
     line-height:75px;
     margin-bottom:50px
   }
@@ -101,8 +99,16 @@ h1 {
 }
 
 .content-section {
-  padding: 45px 10px 10px 10px;
+  padding: 45px 5px 5px 5px;
   text-align: center;
+}
+
+.img-wrap:hover {
+  background-color: black;
+}
+
+.img-wrap:hover img {
+  opacity: 0.8;
 }
 
 /*Nav bar styling*/
@@ -172,12 +178,10 @@ header {
   }
 }
 
-
-// new modal
+// for my work modals
 
 /**
-* Material Modal CSS
-*/
+* Material Modal CSS */
 .modal {
   will-change: visibility, opacity;
   display: -webkit-box;
@@ -243,11 +247,10 @@ header {
 .modal__trigger {
   position: relative;
   display: inline-block;
-  // padding: 1.2rem 2.4rem;
+  margin: .9rem 2.15rem;
   color: rgba(0,0,0,0.7);
   line-height: 0;
   cursor: pointer;
-  // background: lighten(invert($primaryColor), 5%);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-user-select: none;
@@ -257,6 +260,8 @@ header {
   -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
+
+
 .modal__trigger--active {
   z-index: 10;
 }
@@ -355,81 +360,28 @@ header {
   background: rgba(0,0,0,0.6);
 }
 
-// /* The 'my work' modal (background) */
-// .modal {
-//   display: none; /* Hidden by default */
-//   position: fixed; /* Stay in place */
-//   z-index: 1; /* Sit on top */
-//   padding-top: 100px; /* Location of the box */
-//   left: 0;
-//   top: 0;
-//   width: 100%; /* Full width */
-//   height: 100%; /* Full height */
-//   overflow: auto; /* Enable scroll if needed */
-//   background-color: $primaryColor; /* Fallback color */
-//   background-color: opacify($primaryColor, .3); /* Color w/ opacity */
-// }
-//
-// /* 'my work' modal content */
-// .modal-content {
-//   position: relative;
-//   background-color: lighten(invert($primaryColor), 80%);
-//   margin: auto;
-//   padding: 0;
-//   width: 80%;
-//   box-shadow: 0 4px 8px 0 opacify($primaryColor, .2),0 6px 20px 0 opacify($primaryColor, .19);
-//   -webkit-animation-name: animatetop;
-//   -webkit-animation-duration: 0.4s;
-//   animation-name: animatetop;
-//   animation-duration: 0.4s
-// }
-//
-// /* 'my work' modal close button */
-// .close {
-//   color: lighten(invert($primaryColor), 80%);
-//   float: right;
-//   font-size: 28px;
-//   font-weight: bold;
-// }
-//
-// .close:hover,
-// .close:focus {
-//   color: darken($primaryColor, 20%);
-//   text-decoration: none;
-//   cursor: pointer;
-// }
-//
-// .modal-header {
-//   padding: 2px 16px;
-//   background-color: $secondaryColor;
-//   color: lighten(invert($primaryColor), 80%);
-// }
-//
-// .modal-body {
-//   padding: 2px 16px;
-// }
-//
-//
-// .modal-body img {
-//   width: 100%;
-// }
-
 #work img {
-  width: 350px;
+  height: 253px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#play p, #about p {
+#about p {
   text-align: left;
 }
 
 #contact {
-  padding-bottom: 175px;
+  padding-bottom: 260px;
 }
 
-// for the contact icons
+// for the footer contact icons
 .icons {
   margin: 10px 10px;
   color: $primaryColor;
+}
+
+.icons:hover {
+  color: darken($primaryColor, 20%);
 }
 
 footer {

@@ -3,40 +3,42 @@
 @media (min-width: 768px) {
   #profile-pic {
     float: left;
-    margin: -50px 30px 0px 60px; } }
+    margin: -45px 30px 0px 60px; } }
 @media (max-device-width: 480px) {
   #profile-pic {
     float: none;
     margin-left: 0px; } }
 
-@media (min-width: 768px) {
-  #brand-statement {
-    background-color: none;
-    text-align: left; } }
-@media (max-device-width: 480px) {
-  #brand-statement {
-    background-color: #ffc800;
-    padding: 10px 10px; } }
+p#brand-statement {
+  background-color: #ffc800;
+  padding: 10px 10px; }
 
 @media (min-width: 768px) {
   .intro-lead-in h1 {
-    text-align: left;
-    padding-left: 30px; } }
+    text-align: left; } }
 
 .img-circle {
-  border-radius: 50%;
-  border: 5px 1px white; }
+  border-radius: 50%; }
+
+.avatar {
+  margin: 10px;
+  border: 10px solid white;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  box-shadow: 0px 2px 5px #a1a1a1; }
 
 header .intro-text {
-  padding-top: 300px 0 200px 0; }
+  padding: 300px 0 200px 0; }
 header .intro-text .intro-lead-in {
-  font-size: 40px;
   line-height: 40px;
   margin-bottom: 25px; }
+header .intro-text .intro-lead-in p {
+  font-size: 18px; }
 header .intro-text .intro-heading {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 75px;
+  font-size: 40px;
   line-height: 75px;
   margin-bottom: 50px; }
 
@@ -62,8 +64,14 @@ h1 {
   color: #080808; }
 
 .content-section {
-  padding: 45px 10px 10px 10px;
+  padding: 45px 5px 5px 5px;
   text-align: center; }
+
+.img-wrap:hover {
+  background-color: black; }
+
+.img-wrap:hover img {
+  opacity: 0.8; }
 
 /*Nav bar styling*/
 nav {
@@ -116,8 +124,7 @@ header {
     text-shadow: 4px 4px 18px white; }
 
 /**
-* Material Modal CSS
-*/
+* Material Modal CSS */
 .modal {
   will-change: visibility, opacity;
   display: -webkit-box;
@@ -183,6 +190,7 @@ header {
 .modal__trigger {
   position: relative;
   display: inline-block;
+  margin: .9rem 2.15rem;
   color: rgba(0, 0, 0, 0.7);
   line-height: 0;
   cursor: pointer;
@@ -288,17 +296,22 @@ header {
   background: rgba(0, 0, 0, 0.6); }
 
 #work img {
-  width: 350px; }
+  height: 253px;
+  margin-left: auto;
+  margin-right: auto; }
 
-#play p, #about p {
+#about p {
   text-align: left; }
 
 #contact {
-  padding-bottom: 175px; }
+  padding-bottom: 260px; }
 
 .icons {
   margin: 10px 10px;
   color: #3b3b3b; }
+
+.icons:hover {
+  color: #080808; }
 
 footer {
   color: white;
